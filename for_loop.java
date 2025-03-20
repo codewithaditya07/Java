@@ -220,9 +220,3 @@ class for_loop{
         
     }
 }
-
-// Q13.Check Number is Palindrome or Not
-
-// Q14.Check Number is Armstrong or Not
-
-// Q15.Check Number is Magic Or Not
