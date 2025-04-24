@@ -39,34 +39,65 @@
 //  }
 // }
 
-class TH extends Thread
+// class TH extends Thread
+// {
+
+//   public void run()
+//   {
+//       try
+//       {
+//      for(int x=1;x<=10;x++)
+//      {
+//          System.out.println(x);
+//          Thread.sleep(1000);
+//           System.out.println(11-x);
+//          Thread.sleep(3000);
+//      }
+//       }
+//       catch(Exception e)
+//       {
+      
+//       }
+//   }
+
+// }
+
+// public class ExceptionHandling {
+
+//    public static void main(String[] args) {
+
+//     TH ob = new TH();
+//     ob.start();
+//    }
+// }
+
+
+class x extends Thread
+{
+public void run()
+{
+try
+{
+    for(int x=1;x<=10;x++)
+    {
+        System.out.println(x);
+        Thread.sleep(1000*x);
+    }
+    
+}
+catch(Exception i)
 {
 
-  public void run()
-  {
-      try
-      {
-     for(int x=1;x<=10;x++)
-     {
-         System.out.println(x);
-         Thread.sleep(1000);
-          System.out.println(11-x);
-         Thread.sleep(3000);
-     }
-      }
-      catch(Exception e)
-      {
-      
-      }
-  }
-
+}
+}
 }
 
-public class ExceptionHandling {
-
-   public static void main(String[] args) {
-
-    TH ob = new TH();
-    ob.start();
-   }
+class ExceptionHandling{
+  public static void main(String[] args) 
+{
+ 
+    Thread the=new Thread(new x());
+    the.start();
+    
+}
 }
